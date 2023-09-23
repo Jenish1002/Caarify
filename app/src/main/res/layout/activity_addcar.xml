@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hideKeyboard"
+    android:scrollIndicators="none"
+    tools:context=".AddCar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hideKeyboard">
+
+        <!--text - ADD CAR-->
+        <TextView
+            android:id="@+id/tv_AddCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/tv_add_car_addcar"
+            android:textColor="#454242"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--CANCEL-->
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_cancel"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--SAVE-->
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/ic_save"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--how to display recycler view int 4X4 grid that contains car brand name(textview)  and car brand logo(imageview) that can be called when we click on spinner view-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_CarName"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="27dp"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:text="@string/tv_car_name_addcar"-->
+        <!--            android:textColor="#454242"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/btn_Cancel" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/et_CarName"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:defaultFocusHighlightEnabled="false"-->
+        <!--            android:hint="Mercedes G63"-->
+        <!--            android:importantForAutofill="no"-->
+        <!--            android:inputType="text"-->
+        <!--            android:textColor="#B33A3535"-->
+        <!--            android:textColorHint="#806E6E6E"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tv_CarName" />-->
+        <!--CAR BRAND-->
+        <TextView
+            android:id="@+id/tv_CarBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto"
+            android:text="Car Brand"
+            android:textColor="#454242"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_AddCar" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_CarBrand"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_white_circular"
+            android:elevation="1dp"
+            android:fontFamily="@font/roboto"
+            android:spinnerDropDownItemStyle="@style/SpinnerStyle"
+            android:spinnerMode="dropdown"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_CarBrand" />
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_CarBrand"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:background="@drawable/bg_white_circular"-->
+        <!--            android:hint="Select car brand"-->
+        <!--            android:paddingLeft="8dp"-->
+        <!--            android:spinnerDropDownItemStyle="@style/SpinnerStyle"-->
+        <!--            android:spinnerMode="dropdown"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textColorHint="#806E6E6E"-->
+        <!--            android:textColor="@color/LightGray"-->
+        <!--            android:textSize="18sp"-->
+        <!--            app:backgroundTint="@null"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tv_CarBrand" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/etcarbrand"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:defaultFocusHighlightEnabled="false"-->
+        <!--            android:hint="Mercedes-Benz"-->
+        <!--            android:importantForAutofill="no"-->
+        <!--            android:inputType="text"-->
+        <!--            android:textColor="#B33A3535"-->
+        <!--            android:textColorHint="#806E6E6E"-->
+        <!--            app:backgroundTint="@null"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tv_CarBrand" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_CarModel"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="27dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Car Model"-->
+        <!--            android:textColor="#454242"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/btn_CarBrand" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_CarModel"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:background="@drawable/bg_white_circular"-->
+        <!--            android:elevation="1dp"-->
+        <!--            android:fontFamily="@font/poppins"-->
+        <!--            android:spinnerDropDownItemStyle="@style/SpinnerStyle"-->
+        <!--            android:spinnerMode="dropdown"-->
+        <!--            app:backgroundTint="@null"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tv_CarModel" />-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/etcarmodel"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginStart="25dp"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:defaultFocusHighlightEnabled="false"-->
+        <!--            android:hint="2023"-->
+        <!--            android:inputType="number"-->
+        <!--            android:maxLength="4"-->
+        <!--            android:textColor="#B33A3535"-->
+        <!--            android:textColorHint="#806E6E6E"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tv_CarModel" />-->
+
+        <TextView
+            android:id="@+id/tv_CarNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Car Number"
+            android:textColor="#454242"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_CarBrand" />
+
+        <EditText
+            android:id="@+id/etcarnumber"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg_white_circular"
+            android:defaultFocusHighlightEnabled="false"
+            android:cursorVisible="false"
+            android:elevation="1dp"
+            android:fontFamily="@font/roboto"
+            android:hint=" GJ01AC1609"
+            android:inputType="textCapCharacters"
+            android:maxLength="10"
+            android:paddingLeft="5dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="#B33A3535"
+            android:textColorHint="#806E6E6E"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_CarNumber" />
+
+        <TextView
+            android:id="@+id/tvcartype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Car Type"
+            android:textColor="#454242"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etcarnumber" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_CarType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg_white_circular"
+            android:elevation="1dp"
+            android:fontFamily="@font/roboto"
+            android:spinnerDropDownItemStyle="@style/SpinnerStyle"
+            android:spinnerMode="dropdown"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvcartype" />
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/et_CarType"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="50dp"-->
+        <!--        android:layout_marginStart="25dp"-->
+        <!--        android:layout_marginEnd="25dp"-->
+        <!--        android:layout_marginTop="2dp"-->
+        <!--        android:hint="SUV/ Sedan /Hatchback"-->
+        <!--        android:maxLength="10"-->
+        <!--        android:textColorHint="#806E6E6E"-->
+        <!--        android:defaultFocusHighlightEnabled="false"-->
+        <!--        android:inputType="text"-->
+        <!--        android:textColor="#B33A3535"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="1.0"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/tvcartype" />-->
+
+        <TextView
+            android:id="@+id/tvcarfueltype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Car Fuel"
+            android:textColor="#454242"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_CarType" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_FuelType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_white_circular"
+            android:elevation="1dp"
+            android:fontFamily="@font/roboto"
+            android:spinnerDropDownItemStyle="@style/SpinnerStyle"
+            android:spinnerMode="dropdown"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvcarfueltype" />
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/etcarFuelType"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="50dp"-->
+        <!--        android:layout_marginStart="25dp"-->
+        <!--        android:layout_marginEnd="25dp"-->
+        <!--        android:layout_marginTop="2dp"-->
+        <!--        android:hint="Petrol /Diesel /CNG "-->
+        <!--        android:maxLength="10"-->
+        <!--        android:textColorHint="#806E6E6E"-->
+        <!--        android:defaultFocusHighlightEnabled="false"-->
+        <!--        android:inputType="text"-->
+        <!--        android:textColor="#B33A3535"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="1.0"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/tvcarfueltype" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

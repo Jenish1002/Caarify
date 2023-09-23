@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CarService" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/LightBlack</item>
+        <item name="colorPrimaryVariant">@color/Orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/LightGray</item>
+        <item name="colorSecondaryVariant">@color/SeaGreen</item>
+        <item name="colorOnSecondary">@color/Maroon</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#9B3C3B3B</item>
+        <!-- Customize your theme here. -->
+        <item name="spinnerStyle">@style/SpinnerStyle</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/LightGray</item>
+    </style>
+
+    <style name="Theme.CarService.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CarService.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CarService.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

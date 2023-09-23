@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#FF000000</color>
+    <color name="UltramarinBlue">#001E6C</color>
+    <color name="SeaGreen">#99FFCD</color>
+    <color name="Maroon">#F4F4F4</color>
+    <color name="LightBlack">#232020</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="OffWhite">#F4F4F4</color>
+    <color name="LightGray">#6E6E6E</color>
+    <color name="LightestGray">#996E6E6E</color>
+    <color name="DarkGray">#3A3535</color>
+    <color name="Orange">#FF7315</color>
+    <color name="TwOrange">#FF6D00</color>
+</resources>

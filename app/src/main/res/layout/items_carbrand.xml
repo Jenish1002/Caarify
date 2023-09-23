@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="130dp"
+        android:layout_height="96dp"
+        android:layout_margin="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_CarBrandLogo"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#21FAF5F5"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_CarBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="Car Name"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_CarBrandLogo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_CarBrandLogo"-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:elevation="3dp"-->
+    <!--            android:scaleType="centerCrop"-->
+    <!--            android:background="@drawable/bg_white_circular"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.498"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_CarBrandName"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:elevation="1dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:text="Car Name"-->
+    <!--            android:textSize="16sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.5"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/iv_CarBrandLogo" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--    <GridLayout-->
+    <!--        android:id="@+id/gridLayoutcarslist"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="3dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:background="@drawable/bg_white_circular"-->
+    <!--        android:columnCount="4"-->
+    <!--        android:elevation="1dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="5dp"-->
+    <!--        android:rowCount="4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_suzuki"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvsuzuki"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvsuzuki"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Suzuki"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_toyota"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvtoyota"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvtoyota"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Toyota"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_kia"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvkia"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvkia"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Kia"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_audi"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvaudi"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvaudi"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Audi"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_fiat"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvfiat"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvfiat"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Fiat"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_mercedes"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvmercedes"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvmercedes"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Mercedes"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_ford"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvford"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvford"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Ford"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_mazda"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvmazda"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvmazda"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Mazda"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_hyundai"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvhyundai"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvhyundai"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Hyundai"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_honda"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvhonda"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvhonda"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Honda"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#80FFEBEE">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_volkswagen"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvvolkswagen"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvvolkswagen"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Volkswagen"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_skoda"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvskoda"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvskoda"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Skoda"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_jaguar"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvjaguar"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvjaguar"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Jaguar"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_tata"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvtata"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvtata"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Tata"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_renault"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvrenault"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvrenault"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Renault"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:layout_margin="8dp"-->
+    <!--            android:background="#14020202"-->
+    <!--            android:onClick="onCarLogoClicked">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@mipmap/car_nisaan"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/tvnisaan"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.5"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvnisaan"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:fontFamily="sans-serif-medium"-->
+    <!--                android:text="Nisaan"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="10sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    </GridLayout>-->
+

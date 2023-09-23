@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Car Service</string>
+
+    <!--    MAP API KEY    -->
+    <string name="api_map_key">AIzaSyBH9Kv2qzz58842xtd1mdCsG06W19tUots</string>
+
+    <!--    SPLASH SCREEN   -->
+    <string name="tv_caarify">CAARIFY</string>
+    <string name="iv_carimage_splash">iv_carImage</string>
+
+    <!--    SIGN UP     -->
+    <string name="iv_carimage_signup">iv_CarImage</string>
+    <string name="sign_up_signup">Sign Up</string>
+    <string name="tv_or_signup">OR</string>
+    <string name="et_enter_password_signup">Enter Password</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="et_enter_email_signup">Enter Email</string>
+    <string name="et_confirm_password_signup">Confirm Password</string>
+
+    <!--    SIGN IN     -->
+    <string name="iv_carimage_signin">iv_carimage</string>
+    <string name="tv_sign_in_signin">Sign In</string>
+    <string name="et_enter_email_signin">Enter Email</string>
+    <string name="et_enter_password_signin">Enter Password</string>
+    <string name="tv_forgot_password_signin">Forgot Password</string>
+    <string name="tv_or_signin">OR</string>
+    <string name="btn_twitter_signin">btnTwitter</string>
+    <string name="btn_facebook_signin">btn facebook</string>
+    <string name="btn_google_signin">Btn_google</string>
+    <string name="btn_sign_in_signin">Sign In</string>
+
+    <!--    MAIN -->
+    <string name="tv_sign_in_main">Sign In</string>
+    <string name="tv_already_have_an_account_main">Already have an account ?</string>
+    <string name="tv_premium_car_nservcice_main">Premium Car \nService</string>
+    <string name="tv_treat_your_car_with_premium_services_main">Treat Your Car With Premium Services</string>
+    <string name="iv_carimage_main">iv_carImage</string>
+
+    <!--    DASHBOARD   -->
+
+    <!--    HOME   -->
+    <string name="iv_dark_texture_home">dark texture</string>
+    <string name="iv_profile_home">iv_profile</string>
+    <string name="iv_calendar_home">Calendar view</string>
+    <string name="iv_image_caroil_home">image_caroil</string>
+    <string name="iv_notification_home">iv_notification</string>
+    <string name="iv_carimage_home">iv_car-image</string>
+    <string name="tv_username_home" />
+    <string name="tv_car_name_home">Car Name</string>
+    <string name="tv_schedule_home">Schedule</string>
+    <string name="tv_top_services_home">Top Services</string>
+    <string name="tv_view_all_home"><![CDATA[View all >]]></string>
+
+    <!--    POPUP BASIC SERVICE-->
+    <string name="tv_basic_services_popupbasicservice">Basic Services</string>
+    <string name="btn_close_popupbasicservice">Close</string>
+    <string name="bullets_basic_service_data_home">\n
+        ● Wiper fuild replacement\n\n
+        ● Battery water top up\n\n
+        ● Interior Vacuuming\n\n
+        ● Oil filter replacement\n\n
+        ● Coolant top up (200ml)\n\n
+        ● Air filter cleaning\n\n
+        ● Heater/Spark plugs check\n\n
+        ● Car wash\n\n
+        ● Engine oil replacement\n\n
+    </string>
+
+    <!--    POPUP STANDARD SERVICE-->
+    <string name="tv_dtandard_services_popupstandardservice">Standard Services</string>
+    <string name="btn_close_popupstandardservice">Close</string>
+    <string name="bullets_standard_service_data_home">\n
+        ● Wiper fuild replacement\n\n
+        ● Battery water top up\n\n
+        ● Interior Vacuuming\n\n
+        ● Oil filter replacement\n\n
+        ● Coolant top up (200ml)\n\n
+        ● Air filter cleaning\n\n
+        ● Heater/Spark plugs check\n\n
+        ● Car wash\n\n
+        ● Engine oil replacement\n\n
+        ● Car scanning\n\n
+        ● Front brake pads check\n\n
+        ● Rear brake shoes\n\n
+        ● Brake fuild top up\n\n
+        ● AC cleaning\n\n
+        ● Fuel filter checking\n\n
+    </string>
+
+    <!--    POPUP PREMIUM SERVICE-->
+    <string name="tv_dtandard_services_popuppremiumservice">Premium Services</string>
+    <string name="btn_close_popuppremiumservice">Close</string>
+    <string name="bullets_premium_service_data_home">\n
+        ● Wheel balancing\n\n
+        ● Tyre rotation\n\n
+        ● Wheel Alignment\n\n
+        ● Throttle body cleaning\n\n
+        ● Gear oil top up\n\n
+        ● Engine flushing\n\n
+        ● Wiper fuild replacement\n\n
+        ● Battery water top up\n\n
+        ● Interior Vacuuming\n\n
+        ● Oil filter replacement\n\n
+        ● Coolant top up (200ml)\n\n
+        ● Air filter cleaning\n\n
+        ● Heater/Spark plugs check\n\n
+        ● Car wash\n\n
+        ● Engine oil replacement\n\n
+        ● Car scanning\n\n
+        ● Front brake pads check\n\n
+        ● Rear brake shoes\n\n
+        ● Brake fuild top up\n\n
+        ● AC cleaning\n\n
+        ● Fuel filter checking\n\n
+    </string>
+
+    <!--    SHARE LOCATION     -->
+    <string name="title_activity_main2">ShareLocation</string>
+    <string name="iv_carimage_location">iv_carimage</string>
+    <string name="tv_share_location_location">Share Location</string>
+
+    <!--    BOOKINGS      -->
+    <string name="iv_carimage_booking">iv_carimage</string>
+    <string name="tv_book_service_booking">Book Service</string>
+    <string name="btn_service_type_booking">Service Type</string>
+    <string name="btn_service_date_booking">Service Date</string>
+    <string name="btn_choose_car_booking">Choose Car</string>
+    <string name="option_premium_booking">Premium</string>
+    <string name="option_standard_booking">Standard</string>
+    <string name="option_basic_booking">Basic</string>
+    <string-array name="booking_options">
+        <item>@string/option_premium_booking</item>
+        <item>@string/option_standard_booking</item>
+        <item>@string/option_basic_booking</item>
+    </string-array>
+
+    <!--    PROFILE     -->
+    <string name="iv_carimage_profile">iv_carimage</string>
+    <string name="menu_edit_profile_profile">Edit Profile</string>
+    <string name="menu_view_cars_profile">View Cars</string>
+    <string name="menu_settings_profile">Settings</string>
+    <string name="menu_customer_help_profile">Customer Help</string>
+    <string name="menu_logout_profile">Logout</string>
+
+    <!--    EDIT PROFILE    -->
+    <string name="tv_edit_profile_editprofile">Edit Profile</string>
+    <string name="iv_avatar_editprofile">iv_avatar</string>
+    <string name="tv_username_editprofile">Username</string>
+    <string name="tv_address_editprofile">Address</string>
+    <string name="tv_license_editprofile">License</string>
+    <string name="tv_contact_editprofile">Contact</string>
+
+    <!--    MY CARS     -->
+    <string name="iv_carimage_mycars">iv_carimage</string>
+    <string name="btn_add_car_mycars">Add Car</string>
+
+    <!--    SETTINGS        -->
+    <string name="tv_add_feature_settings">feature to be added soon</string>
+
+    <!--    LOGOUT      -->
+    <string name="tv_yes_logout">Yes</string>
+    <string name="tv_no_logout">No</string>
+    <string name="tv_message_logout">Are you sure you want to logout?</string>
+
+    <!--    CUSTOMER HELP   -->
+    <string name="link_customer_support">https://support-caarify.netlify.app/</string>
+
+    <!--    FORGOT PASSWORD-->
+    <string name="et_enter_email_forgotpassword">Enter Email</string>
+    <string name="iv_dark_texture_forgotpassword">iv_dark_texture</string>
+    <string name="btn_send_forgotpassword">Send</string>
+
+    <!--    ADD CAR     -->
+    <string name="tv_add_car_addcar">Add Car</string>
+    <string name="tv_car_name_addcar">Car Name</string>
+    <string name="option_select_fuel_type_addcar">Select fuel type</string>
+    <string name="option_petrol_addcar">Petrol</string>
+    <string name="option_diesel_addcar">Diesel</string>
+    <string name="option_cng_addcar">CNG</string>
+    <string name="option_electric_addcar">Electric</string>
+    <string name="option_select_car_type_addcar">Select car type</string>
+    <string name="option_select_car_brand_addcar">Select car brand</string>
+    <string name="option_suv_addcar">SUV</string>
+    <string name="option_sedan_addcar">Sedan</string>
+    <string name="option_hatchback_addcar">HatchBack</string>
+    <string name="option_coupe_addcar">Coupe</string>
+    <string name="option_van_addcar">Van</string>
+    <!--    DROPDOWN CAR BRAND       -->
+    <string-array name="car_brands">
+        <item>@string/option_select_car_brand_addcar</item>
+        <item>Mercedes-Benz</item>
+        <item>Kia</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Datsun</item>
+    </string-array>
+    <!--    DROPDOWN FUEL TYPE      -->
+    <string-array name="fuel_types">
+        <item>@string/option_select_fuel_type_addcar</item>
+        <item>@string/option_petrol_addcar</item>
+        <item>@string/option_diesel_addcar</item>
+        <item>@string/option_cng_addcar</item>
+        <item>@string/option_electric_addcar</item>
+    </string-array>
+
+    <!--    oiltype-->
+    <string-array name="oil_types">
+        <item>OIl1</item>
+        <item>OIl2</item>
+        <item>OIl3</item>
+    </string-array>
+    <!--    oiltype-->
+    <string-array name="battery_types">
+        <item>battery1</item>
+        <item>battery2</item>
+        <item>battery3</item>
+    </string-array>
+    <!--    DROPDOWN CAR TYPE       -->
+    <string-array name="car_types">
+        <item>@string/option_select_car_type_addcar</item>
+        <item>@string/option_van_addcar</item>
+        <item>@string/option_suv_addcar</item>
+        <item>@string/option_coupe_addcar</item>
+        <item>@string/option_sedan_addcar</item>
+        <item>@string/option_hatchback_addcar</item>
+    </string-array>
+    <!--    DIALOG CAR BRANDS-->
+    <!--    ROW 1-->
+    <string name="option_volkswagen_addcar">VW</string>
+    <string name="option_suzuki_addcar">Suzuki</string>
+    <string name="option_skoda_addcar">Skoda</string>
+    <string name="option_tata_addcar">Tata</string>
+    <!--    ROW 2-->
+    <string name="option_mercedes_addcar">Mercedes</string>
+    <string name="option_jaguar_addcar">Jaguar</string>
+    <string name="option_honda_addcar">Honda</string>
+    <string name="option_fiat_addcar">Fiat</string>
+    <!--    ROW 3-->
+    <string name="option_nisaan_addcar">Nisaan</string>
+    <string name="option_hyundai_addcar">Hyundai</string>
+    <string name="option_mazda_addcar">Mazda</string>
+    <string name="option_kia_addcar">Kia</string>
+    <!--    ROW 4-->
+    <string name="option_renault_addcar">Renault</string>
+    <string name="option_toyota_addcar">Toyota</string>
+    <string name="option_ford_addcar">Ford</string>
+    <string name="option_audi_addcar">Audi</string>
+    <!--    ROW 5-->
+    <string name="option_rollsroyce_addcar">RR</string>
+    <string name="option_datsun_addcar">Datsun</string>
+    <string name="option_volvo_addcar">Volvo</string>
+    <string name="option_bmw_addcar">BMW</string>
+    <!--    ROW 6-->
+    <string name="option_mahindra_addcar">Mahindra</string>
+    <string name="option_premier_addcar">Premier</string>
+    <string name="option_buick_addcar">Buick</string>
+    <string name="option_jeep_addcar">Jeep</string>
+
+</resources>

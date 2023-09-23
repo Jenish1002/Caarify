@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hideKeyboard"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:contentDescription="@string/iv_carimage_signin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_black_texture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_white_circular"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/tv_sign_in_signin"
+            android:textColor="@color/DarkGray"
+            android:textSize="33sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etloginemail"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_white_circular"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:elevation="2dp"
+            android:hint="@string/et_enter_email_signin"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/etloginpass"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_white_circular"
+            android:drawableStart="@drawable/ic_tpassword"
+            android:drawablePadding="15dp"
+            android:elevation="2dp"
+            android:hint="@string/et_enter_password_signin"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etloginemail"
+            tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvforgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/rajdhanilight"
+            android:text="@string/tv_forgot_password_signin"
+            android:textAllCaps="false"
+            android:textColor="@color/TwOrange"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/etloginpass"
+            app:layout_constraintTop_toBottomOf="@+id/etloginpass"
+            tools:ignore="TextContrastCheck" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/LightBlack"
+            app:layout_constraintEnd_toStartOf="@+id/tvor"
+            app:layout_constraintTop_toBottomOf="@+id/tvforgot" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:background="@color/LightBlack"
+            app:layout_constraintStart_toEndOf="@+id/tvor"
+            app:layout_constraintTop_toBottomOf="@+id/tvforgot" />
+
+        <TextView
+            android:id="@+id/tvor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="@string/tv_or_signin"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvforgot" />
+
+
+        <ImageButton
+            android:id="@+id/btntwitter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_white_circular"
+            android:contentDescription="@string/btn_twitter_signin"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_twitter"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnface"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/btnface"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_white_circular"
+            android:contentDescription="@string/btn_facebook_signin"
+            android:visibility="gone"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_facebook"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btngoogle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_white_circular"
+            android:contentDescription="@string/btn_google_signin"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_google"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnface"
+            tools:ignore="ImageContrastCheck" />
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progresstodashboard"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:visibility="gone"-->
+<!--            android:foregroundGravity="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_orangecircular"
+        android:elevation="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/btn_sign_in_signin"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

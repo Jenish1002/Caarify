@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/edit"
+            android:title="@string/menu_edit_profile_profile" />
+        <item
+            android:id="@+id/car"
+            android:title="@string/menu_view_cars_profile" />
+
+        <item
+            android:id="@+id/settings"
+            android:title="@string/menu_settings_profile" />
+
+        <item
+            android:id="@+id/CustomerSupport"
+            android:title="@string/menu_customer_help_profile" />
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/menu_logout_profile" />
+    </group>
+</menu>

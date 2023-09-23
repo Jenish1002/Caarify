@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".Bookings">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:contentDescription="@string/iv_carimage_booking"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_premium_car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_white_circular_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.433">
+
+        <Button
+            android:id="@+id/btnbookService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_black_circular_25dp"
+            android:elevation="1dp"
+            android:text="@string/tv_book_service_booking"
+            android:textColor="@color/OffWhite"
+            android:textSize="16sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="0dp"
+            android:background="@drawable/bg_white_circular"
+            android:layout_height="60dp"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:text="@string/btn_service_date_booking"
+            android:textColor="@color/DarkGray"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnservicetypedialog" />
+
+        <Button
+            android:id="@+id/btnservicetypedialog"
+            android:layout_width="0dp"
+            android:background="@drawable/bg_white_circular"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:elevation="2dp"
+            android:textColor="@color/DarkGray"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:text="@string/btn_service_type_booking"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnbookService" />
+
+        <Button
+            android:id="@+id/btnchoosecars"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_white_circular"
+            android:elevation="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/btn_choose_car_booking"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/DarkGray"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPickDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/floataddcasr"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:src="@drawable/ic_addcar"-->
+    <!--        android:tint="#FFFFFF"-->
+    <!--        app:borderWidth="0dp"-->
+    <!--        android:backgroundTint="#FBA66C"-->
+    <!--        app:fabSize="auto"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:rippleColor="@color/Orange" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
